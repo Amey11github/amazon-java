@@ -6,7 +6,6 @@ class Products {
     String prodName;
     double prodPrice;
 
-
     static List<Products> prodList = new ArrayList<>();
     static List<Products> cartProd = new ArrayList<>();
 
@@ -16,7 +15,6 @@ class Products {
         this.prodName = prodName;
         this.prodPrice = prodPrice;
     }
-
 
     public static void addProduct(Scanner sc) {
         System.out.println("Add Product ........................");
@@ -32,7 +30,6 @@ class Products {
         prodList.add(new Products(prodId, prodType, prodName, prodPrice));
         System.out.println("Product added successfully!");
     }
-
 
     public static void dispProducts(Scanner sc) {
         if (prodList.isEmpty()) {
@@ -60,7 +57,6 @@ class Products {
         }
     }
 
-
     public static void cart() {
         if (cartProd.isEmpty()) {
             System.out.println("Your cart is empty.");
@@ -71,7 +67,6 @@ class Products {
             }
         }
     }
-
 
     public static void checkout() {
         if (cartProd.isEmpty()) {
